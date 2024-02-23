@@ -18,6 +18,11 @@ public class Usuario {
 	@Column(name = "usua_password")
 	private String password;
 
+	
+	
+	
+
+
 	//GET Y SET 
 	public Integer getId() {
 		return id;

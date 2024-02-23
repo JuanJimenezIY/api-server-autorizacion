@@ -1,6 +1,7 @@
 package com.example.demo.repository;
 
 import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
 import javax.transaction.Transactional;
 
@@ -12,6 +13,7 @@ import com.example.demo.repository.modelo.Usuario;
 @Repository
 public class UsuarioRepositoryImpl implements IUsuarioRepository {
 
+	@PersistenceContext
 	private EntityManager entityManager;
 
 
