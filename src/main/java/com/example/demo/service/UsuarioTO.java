@@ -10,9 +10,6 @@ public class UsuarioTO implements Serializable{
 	private String password;
 	
 	
-	
-	
-	
 	@Override
 	public String toString() {
 		return "UsuarioTO [nombre=" + nombre + ", password=" + password + "]";

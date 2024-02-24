@@ -22,7 +22,7 @@ public class JwtUtils {
 
 	public String buildTokenJwt(String nombre) {
 
-		return Jwts.builder().setSubject(nombre).setSubject("Hola mundo").setIssuedAt(new Date())
+		return Jwts.builder().setSubject(nombre).setSubject(nombre).setIssuedAt(new Date())
 				.setExpiration(new Date(System.currentTimeMillis() + this.jwtExpirationMs))
 				.signWith(SignatureAlgorithm.HS512, "jwtSemillauyuyugfesybsueyfb561drg65d1rg51drg651drg516516516516516516515661fgh651fghsyuebfysue").compact();
 

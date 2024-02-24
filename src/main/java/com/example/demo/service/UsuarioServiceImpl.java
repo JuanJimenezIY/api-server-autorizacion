@@ -21,7 +21,8 @@ public class UsuarioServiceImpl implements UserDetailsService{
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 		// TODO Auto-generated method stub
 		Usuario usuario= this.iUsuarioRepository.ConsultarPorNombre(username);
-		
+		System.out.println(usuario.getNombre());
+		System.out.println(usuario.getPassword());
 		//solo para comporbar , no se debe imprimri esto 
 		//System.out.println(usuario);
 		return new User(usuario.getNombre(), usuario.getPassword(), emptyList());

@@ -23,6 +23,8 @@ public class UsuarioRepositoryImpl implements IUsuarioRepository {
 				Usuario.class);
 		myQuery.setParameter("nombre", nombre);
 		return myQuery.getSingleResult();
+		
+		
 	}
 
 }
