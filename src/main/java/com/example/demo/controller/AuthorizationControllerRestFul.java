@@ -33,7 +33,7 @@ public class AuthorizationControllerRestFul {
 		//si es correcta la autorizacion recien ahi retorno el token
 	    System.out.print(usuarioTO);
 		this.autenticacion(usuarioTO.getNombre(), usuarioTO.getPassword());
-		return new JwtUtils().buildTokenJwt(usuarioTO.getNombre());
+		return this.jwt.buildTokenJwt(usuarioTO.getNombre());
 		
 	}
 	
